@@ -2,7 +2,10 @@
 
 /css/demos
 /css/fonts
-/css/skins
+/css/skins/default.css
+/css/skins/skin-app-landing.css
+/css/skins/skin-resume.css
+/css/skins/skin-sass.css
 /css/rtl-theme-blog.css
 /css/rtl-theme-elements.css
 /css/rtl-theme-shop.css
