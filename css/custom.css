@@ -265,6 +265,74 @@ color: #40B3A6;
   background-color: #40B3A6 !important;
 }
 
+.card-body.video{
+  padding: 0;
+}
+.thumb-info .thumb-info-wrapper img{
+  height: 215px;
+}
+.list.list-icons.list-primary.task{
+  padding-top: 10px;
+}
+.list.list-icons.list-primary.task li{
+  cursor: pointer;
+  transition: .3s;
+}
+.list.list-icons.list-primary.task li:hover{
+  color:black;
+
+}
+
+
+.picZooming{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0 0 0 / 50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 5px;
+  z-index: 2;
+  cursor: pointer;
+  transition: .3s;
+  transform: translate(-51px, -40px);
+}
+.picZooming i{
+  color: rgb(255 255 255 / 80%);
+  font-size: 17px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.thumb-info .thumb-info-wrapper:hover .picZooming{
+  transform: translate(0, 0);
+}
+.layouPic{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 80%);
+  z-index: 1;
+  display: none;
+}
+.layouPic img{
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: zoom-out;
+}
+@media(max-width:765px){
+  .layouPic img{
+    width: 80%;
+  }
+}
+
+
 
 
 
