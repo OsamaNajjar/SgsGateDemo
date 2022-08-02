@@ -360,6 +360,11 @@ color: #40B3A6;
   color:rgb(50 143 132);
 }
 
+video{
+  max-width: 480px !important;
+  max-height: 200px !important;
+  min-height: 200px !important;
+}
 
 
 
