@@ -331,24 +331,33 @@ color: #40B3A6;
     width: 80%;
   }
 }
-.col-lg-6{
+.boxList{
   margin:auto;
   text-align: right;
 }
 @media(max-width:990px){
-  .col-lg-6{
+  .boxList{
     width:80%;
   }
 }
 @media(min-width:991px){
-  .col-lg-6{
+  .boxList{
     width:95%;
   }
 }
 @media(min-width:1245px){
-  .col-lg-6{
+  .boxList{
     width:88%;
   }
+}
+.morelnk{
+  animation-delay: 900ms;
+  padding-top: 10px;
+  color: #40B3A6;
+  transition: .3s;
+}
+.morelnk:hover{
+  color:rgb(50 143 132);
 }
 
 
