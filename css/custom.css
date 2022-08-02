@@ -331,6 +331,25 @@ color: #40B3A6;
     width: 80%;
   }
 }
+.col-lg-6{
+  margin:auto;
+  text-align: right;
+}
+@media(max-width:990px){
+  .col-lg-6{
+    width:80%;
+  }
+}
+@media(min-width:991px){
+  .col-lg-6{
+    width:95%;
+  }
+}
+@media(min-width:1245px){
+  .col-lg-6{
+    width:88%;
+  }
+}
 
 
 
