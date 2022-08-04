@@ -66,11 +66,17 @@
 									<div class="header-row">
 										<nav class="header-nav-top">
 											<ul class="nav nav-pills">
-												<li class="nav-item">
-													<span class="ws-nowrap custom-text-color-grey-1 text-2 ps-0"><i class="icon-envelope icons text-4 top-3 left-1 me-1"></i> <a href="mailto:support@sgs.org.sa" class="text-color-default text-color-hover-primary"> support@sgs.org.sa </a></span>
+												<li class="nav-item d-none d-md-block">
+													<span class="ws-nowrap custom-text-color-grey-1 text-2 ps-0"><i class="icon-envelope icons text-4 top-3 left-1 me-1"></i> <a href="mailto:helpdesk@sgs.org.sa" class="text-color-default text-color-hover-primary"> helpdesk@sgs.org.sa </a></span>
 												</li>
 												<li class="nav-item d-none d-md-block">
 													<span class="ws-nowrap custom-text-color-grey-1 text-2"> 5555 <i class="fas fa-phone-alt icons text-4 top-3 left-1 me-1"></i></span>
+												</li>
+												<li class="nav-item">
+													<select id="languages" name="languages">
+														<option value="ar">Arabic - العربية</option>
+														<option value="en-US">English (United States)</option>
+													</select>
 												</li>
 											</ul>
 										</nav>
@@ -78,6 +84,13 @@
 								</div>
 								<div class="header-column justify-content-end">
 									<div class="header-row">
+										<a style="min-width: 150px; text-align: center;font-size:11pt; margin:5px; color :white;
+												  background-image: linear-gradient(to right, rgba(184, 30, 30, 0.849) , rgb(170, 35, 48));
+												  padding: 10px ;
+												  margin-bottom: 0px;
+												  border-radius:  20px 20px 0px 0px">
+											نسخة تجريبية
+										</a>
 										<ul class="header-social-icons social-icons social-icons-clean d-none d-lg-block me-3">
 											<li class="social-icons-instagram"><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
 											<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
@@ -100,7 +113,7 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="index.html">
-											<img alt="Porto" width="240" height="46" src="img/demos/seo-2/logo.png">
+											<img alt="SGS" width="320" height="54" src="img/demos/seo-2/SgsLogoV2.png">
 										</a>
 									</div>
 								</div>
@@ -116,15 +129,46 @@
 															الرئيسية
 														</a>
 													</li>
-													<li>
-														<a class="nav-link" href="blog.html">
-															الأخبار
+													<li class="dropdown">
+														<a class="dropdown-item dropdown-toggle" href="policies.html">
+															السياسات والإجراءات
 														</a>
+														<ul class="dropdown-menu">
+															<li>
+																<a class="nav-link" href="./policies.html">السياسات الأمن السيبراني</a>
+															</li>
+															<li>
+																<a class="nav-link" href="./policies.html">سياسات الموارد البشرية</a>
+															</li>
+															<li>
+																<a class="nav-link" href="./policies.html">سياسات الإتصال المؤسسي </a>
+															</li>
+															<li>
+																<a class="nav-link" href="">تثقيف الموظفين</a>
+															</li>
+															<li>
+																<a class="nav-link" href="">دليل المستخدم</a>
+															</li>
+														</ul>
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="servies.html">
-															الخدمات
+														<a class="dropdown-item dropdown-toggle" href="">
+															 الخدمات الإلكترونية
 														</a>
+														<ul class="dropdown-menu">
+															<li>
+																<a class="nav-link" href="/Arabic/Services/Pages/default.aspx">النماذج الإلكترونية</a>
+															</li>
+															<li>
+																<a class="nav-link" href="http://sgs-jed052:810/hrportalmvc/">خدماتي</a>
+															</li>
+															<li>
+																<a class="nav-link" href="http://sgs-jed94-lserf.sgs.org/WebCMS/login.aspx">إنجاز</a>
+															</li>
+															<li>
+																<a class="nav-link" href="#allApps">التطبيقات الداخلية</a>
+															</li>
+														</ul>
 													</li>
 													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="">
@@ -133,10 +177,16 @@
 														<ul class="dropdown-menu">
 															
 															<li>
-																<a class="nav-link" href="">التقارير السنوية</a>
+																<a class="nav-link" href="reports.html">التقارير السنوية</a>
 															</li>
 															<li>
 																<a class="nav-link" href="">تقارير وإصدارات خارجية حكومية</a>
+															</li>
+															<li>
+																<a class="nav-link" href="">المحاضرات والدورات التدريبية</a>
+															</li>
+															<li>
+																<a class="nav-link" href="">مجلة أرضنا</a>
 															</li>
 															<li>
 																<a class="nav-link" href="">برامج العمل</a>
@@ -147,12 +197,18 @@
 															<li>
 																<a class="nav-link" href="">قوالب للتحميل</a>
 															</li>
+
+															
+															<li>
+																<a class="nav-link" href="">تثقيف إداري</a>
+															</li>
+															<li>
+																<a class="nav-link" href="">تثقيف الموظفين</a>
+															</li>
+															<li>
+																<a class="nav-link" href="">قوالب للتحميل</a>
+															</li>
 														</ul>
-													</li>
-													<li>
-														<a class="nav-link" href="">
-															 اقتراحات الموظفين
-														</a>
 													</li>
 											</nav>
 										</div>
@@ -160,11 +216,7 @@
 											<i class="fas fa-bars"></i>
 										</button>
 									</div>
-									<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
-										<div class="header-nav-feature header-nav-features-search d-inline-flex">
-											<a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch">En</a>
-										</div>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -189,7 +241,7 @@
 							<div class="custom-bg-color-grey-2 rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 0.6, 'transition': true, 'transitionDuration': 500}"></div>
 						</div>
 						<div class="custom-circle custom-circle-medium custom-circle-pos-5 custom-circle-pos-5-5 appear-animation" data-appear-animation="expandInWithBlur" data-appear-animation-delay="1050" data-appear-animation-duration="2s">
-							<div class="bg-color-secondary rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'transition': true, 'transitionDuration': 2000}"></div>
+							<div class="bg-color-tertiary rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'transition': true, 'transitionDuration': 2000}"></div>
 						</div>
 						<div class="custom-circle custom-circle-medium custom-circle-pos-6 custom-circle-pos-6-6 appear-animation" data-appear-animation="expandInWithBlur" data-appear-animation-delay="1200" data-appear-animation-duration="2s">
 							<div class="custom-bg-color-grey-2 rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 0.8, 'transition': true, 'transitionDuration': 500}"></div>
@@ -202,8 +254,8 @@
 										<li class="active">الخدمات الإلكترونية</li>
 									</ul>
 								</div>
-								<div class="overflow-hidden mb-4">
-									<h1 class="d-block text-color-quaternary font-weight-bold text-center mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="1000">الخدمات الإلكترونية</h1>
+								<div class="overflow-hidden  py-4">
+									<h3 class="d-block text-color-quaternary font-weight-bold text-center mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="1000">الخدمات الإلكترونية</h3>
 								</div>
 							</div>
 						</div>
@@ -823,7 +875,7 @@
 						<br><br><br>
 
 						<div class="custom-circle custom-circle-big custom-circle-pos-20 appear-animation" data-appear-animation="expandInWithBlur" data-appear-animation-delay="200" data-appear-animation-duration="2s">
-							<div class="bg-color-secondary rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 1, 'transition': true, 'transitionDuration': 2000}"></div>
+							<div class="bg-color-tertiary rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 1, 'transition': true, 'transitionDuration': 2000}"></div>
 						</div>
 						<div class="custom-circle custom-circle-small custom-circle-pos-21 appear-animation" data-appear-animation="expandInWithBlur" data-appear-animation-delay="700" data-appear-animation-duration="2s">
 							<div class="custom-bg-color-grey-2 rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 0.5, 'transition': true, 'transitionDuration': 1000}"></div>
@@ -844,82 +896,72 @@
 				<svg class="custom-section-curved-top-7" width="100%" height="400" xmlns="http://www.w3.org/2000/svg">
 					<path id="svg_2" fill="#171940" stroke="#000" stroke-width="0" d="m-16.68437,95.44889c0,0 5.33335,176.00075 660.00283,93.33373c327.33474,-41.33351 503.33549,15.3334 639.00274,35.66682c135.66725,20.33342 59.66691,9.66671 358.33487,28.33346c298.66795,18.66676 268.66829,-45.00088 382.66831,-112.00048c114.00002,-66.9996 718.31698,-59.48704 1221.66946,95.563c503.35248,155.05004 -221.83202,184.10564 -243.66935,197.60521c-21.83733,13.49958 -3008.67549,-19.83371 -3008.00467,-20.83335c-0.67082,0.99964 -30.00428,-232.33469 -10.00419,-317.66839z" class="svg-fill-color-quaternary"/>
 				</svg>
-				<div class="container position-relative mt-0 mb-4">
-					<div class="row py-5">
+				<div class="container position-relative mt-0">
+					<div class="row">
 						<div class="col-lg-3 mb-5 mb-lg-0">
-							<a href="index.html">
-								<img src="img/demos/seo-2/logo-footer.png" class="img-fluid" alt="Demo SEO 2" />
+							<a href="">
+								<img src="img/demos/seo-2/2030.png" class="img-fluid" style="max-height: 90px;"/>
 							</a>
 							<br><br>
-							<a href="index.html">
-								<img src="img/demos/seo-2/2030.png" width="240px" class="img-fluid" alt="Demo SEO 2" />
+							<a href="">
+								<img src="img/demos/seo-2/paperless.png" class="img-fluid" style="max-height: 80px;"/>
 							</a>
 						</div>
-						<div class="col-lg-3 mb-4 mb-lg-0">
+						<div class="col-lg-3 mb-lg-0">
 							<h4 class="font-weight-bold text-color-light text-5 ls-0 pb-1 mb-2">اقسام الموقع</h4>
 							<ul class="list list-unstyled">
 								<li class="mb-1">
-									<a href="#">الدرسات و الابحاث</a>
+									<a href="/Arabic/downlowd/Pages/default.aspx">مكتبة التحميل</a>
 								</li>
 								<li class="mb-1">
-									<a href="#">الخرائط</a>
+									<a href="#">مكتبة الفيديو</a>
 								</li>
 								<li class="mb-1">
-									<a href="#">المنتجات والخدمات</a>
+									<a href="/Arabic/Pages/PoliciesProcedures.aspx">السياسات والإجراءات</a>
 								</li>
 								<li class="mb-1">
-									<a href="#">عن الهيئة</a>
+									<a href="/_layouts/15/FormServer.aspx?XsnLocation=/FormServerTemplates/FollowUpFeedback.xsn&SaveLocation=/FormServerTemplates/ClientInstalled=true&DefaultItemOpen=1">اقتراحات الموظفين</a>
 								</li>
 								<li class="mb-1">
-									<a href="#">تواصل معنا</a>
+									<a href="/_layouts/FormServer.aspx?XsnLocation=/intraform/forms/template.xsn&SaveLocation=/intraform/ClientInstalled=true&DefaultItemOpen=1">الملاحظات والاقتراحات</a>
+								</li>
+								<li class="mb-1">
+									<a href="/Arabic/Search/Pages/default.aspx">مركز البحث</a>
 								</li>
 							</ul>
 						</div>
 						<div class="col-lg-3 mb-4 mb-lg-0">
-							<h4 class="font-weight-bold text-color-light text-5 ls-0 pb-1 mb-2">الخدمات</h4>
+							<h4 class="font-weight-bold text-color-light text-5 ls-0 pb-1 mb-2"> &nbsp; </h4>
 							<ul class="list list-unstyled">
 								<li class="mb-1">
-									<a href="">خدمات الاستثمار</a>
+									<a href="">التوعية</a>
 								</li>
 								<li class="mb-1">
-									<a href="">المتجر الالكتروني</a>
+									<a href="">التعاميم</a>
 								</li>
 								<li class="mb-1">
-									<a href="">قاعدة المعلومات الوطنية</a>
+									<a href="">الامن والسلامة</a>
 								</li>
 								<li class="mb-1">
-									<a href="">مكتبتي</a>
+									<a href="">العلاقات العامة</a>
 								</li>
 								<li class="mb-1">
-									<a href="">رصد النشاط الزلزالي</a>
+									<a href="">المشتريات والمنافسات</a>
 								</li>
 							</ul>
 						</div>
 						<div class="col-lg-3">
-							<h4 class="font-weight-bold text-color-light text-5 ls-0 pb-1 mb-2">تواصل معنا</h4>
-							<ul class="list list-unstyled">
-								<li class="mb-1">
-									العنوان: طريق الحرمين , جدة  
-								</li>
-								<li class="mb-1">
-									الهاتف: <a href="tel:+966126195000">٠١٢٦١٥٠٠٠</a>
-								</li>
-								<li class="mb-1">
-									البريد : ص.ب ٥٤١٤١ جدة ٢١٥١٤
-								</li>
-							</ul>
-							<ul class="social-icons custom-social-icons-style-1">
-								<li class="social-icons-instagram"><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-								<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-								<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-							</ul>
+							<h4 class="font-weight-bold text-color-light text-5 ls-0 pb-1 mb-2"> &nbsp; </h4>
+							
+							<a href="https://sgs.org.sa/" target="_blank" title="sgs.gov.sa"><i class="fas fa-globe"></i> البوابة الخارجية</a><br>
+							<a href="https://www.absher.sa/" target="_blank" title="أبشر"><img src="img/demos/seo-2/icons/absher-01.svg" class="img-fluid mb-4 pb-2" width="100" height="80" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light pb-2 mb-4'}" /></i></a>
 						</div>
 					</div>
 				</div>
 				<div class="footer-copyright bg-color-quaternary">
-					<div class="container py-2">
+					<div class="container">
 						<hr class="bg-color-light opacity-1 mb-0">
-						<div class="row justify-content-center py-4">
+						<div class="row justify-content-center py-2">
 							<div class="col-auto">
 								<p class="text-color-light opacity-5 text-3">جميع الحقوق محفوظة © 2022 هيئةالمساحة الجيولوجية السعودية</p>
 							</div>
