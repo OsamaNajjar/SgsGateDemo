@@ -62,11 +62,17 @@
 									<div class="header-row">
 										<nav class="header-nav-top">
 											<ul class="nav nav-pills">
-												<li class="nav-item">
-													<span class="ws-nowrap custom-text-color-grey-1 text-2 ps-0"><i class="icon-envelope icons text-4 top-3 left-1 me-1"></i> <a href="mailto:support@sgs.org.sa" class="text-color-default text-color-hover-primary"> support@sgs.org.sa </a></span>
+												<li class="nav-item d-none d-md-block">
+													<span class="ws-nowrap custom-text-color-grey-1 text-2 ps-0"><i class="icon-envelope icons text-4 top-3 left-1 me-1"></i> <a href="mailto:helpdesk@sgs.org.sa" class="text-color-default text-color-hover-primary"> helpdesk@sgs.org.sa </a></span>
 												</li>
 												<li class="nav-item d-none d-md-block">
 													<span class="ws-nowrap custom-text-color-grey-1 text-2"> 5555 <i class="fas fa-phone-alt icons text-4 top-3 left-1 me-1"></i></span>
+												</li>
+												<li class="nav-item">
+													<select id="languages" name="languages">
+														<option value="ar">Arabic - العربية</option>
+														<option value="en-US">English (United States)</option>
+													</select>
 												</li>
 											</ul>
 										</nav>
@@ -120,18 +126,18 @@
 														</a>
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="">
+														<a class="dropdown-item dropdown-toggle" href="policies.html">
 															السياسات والإجراءات
 														</a>
 														<ul class="dropdown-menu">
 															<li>
-																<a class="nav-link" href="">السياسات الأمن السيبراني</a>
+																<a class="nav-link" href="./policies.html">السياسات الأمن السيبراني</a>
 															</li>
 															<li>
-																<a class="nav-link" href="">سياسات الموارد البشرية</a>
+																<a class="nav-link" href="./policies.html">سياسات الموارد البشرية</a>
 															</li>
 															<li>
-																<a class="nav-link" href="">سياسات إدارة المعرفة</a>
+																<a class="nav-link" href="./policies.html">سياسات الإتصال المؤسسي </a>
 															</li>
 															<li>
 																<a class="nav-link" href="">تثقيف الموظفين</a>
@@ -162,21 +168,38 @@
 													</li>
 													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="">
-															 مكتبة التحميل
+															 مكتبة التحميل 
 														</a>
 														<ul class="dropdown-menu">
-
+															
 															<li>
-																<a class="nav-link" href="">التقارير السنوية</a>
+																<a class="nav-link" href="reports.html">التقارير السنوية</a>
 															</li>
 															<li>
 																<a class="nav-link" href="">تقارير وإصدارات خارجية حكومية</a>
+															</li>
+															<li>
+																<a class="nav-link" href="">المحاضرات والدورات التدريبية</a>
+															</li>
+															<li>
+																<a class="nav-link" href="">مجلة أرضنا</a>
 															</li>
 															<li>
 																<a class="nav-link" href="">برامج العمل</a>
 															</li>
 															<li>
 																<a class="nav-link" href="">نظام العمل</a>
+															</li>
+															<li>
+																<a class="nav-link" href="">قوالب للتحميل</a>
+															</li>
+
+															
+															<li>
+																<a class="nav-link" href="">تثقيف إداري</a>
+															</li>
+															<li>
+																<a class="nav-link" href="">تثقيف الموظفين</a>
 															</li>
 															<li>
 																<a class="nav-link" href="">قوالب للتحميل</a>
@@ -189,7 +212,7 @@
 											<i class="fas fa-bars"></i>
 										</button>
 									</div>
-
+									
 								</div>
 							</div>
 						</div>
@@ -213,7 +236,7 @@
 							<div class="custom-bg-color-grey-2 rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 0.6, 'transition': true, 'transitionDuration': 500}"></div>
 						</div>
 						<div class="custom-circle custom-circle-medium custom-circle-pos-5 custom-circle-pos-5-5 appear-animation" data-appear-animation="expandInWithBlur" data-appear-animation-delay="1050" data-appear-animation-duration="2s">
-							<div class="bg-color-secondary rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'transition': true, 'transitionDuration': 2000}"></div>
+							<div class="bg-color-tertiary rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'transition': true, 'transitionDuration': 2000}"></div>
 						</div>
 						<div class="custom-circle custom-circle-medium custom-circle-pos-6 custom-circle-pos-6-6 appear-animation" data-appear-animation="expandInWithBlur" data-appear-animation-delay="1200" data-appear-animation-duration="2s">
 							<div class="custom-bg-color-grey-2 rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 0.8, 'transition': true, 'transitionDuration': 500}"></div>
@@ -226,8 +249,8 @@
 										<li class="active">مكتبة الصور</li>
 									</ul>
 								</div>
-								<div class="overflow-hidden mb-4">
-									<h1 class="d-block text-color-quaternary font-weight-bold text-center mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="1000">مكتبة الصور</h1>
+								<div class="overflow-hidden  py-4">
+									<h3 class="d-block text-color-quaternary font-weight-bold text-center mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="1000">مكتبة الصور</h3>
 								</div>
 							</div>
 						</div>
@@ -349,7 +372,7 @@
 
 
 						<div class="custom-circle custom-circle-big custom-circle-pos-20 appear-animation" data-appear-animation="expandInWithBlur" data-appear-animation-delay="200" data-appear-animation-duration="2s">
-							<div class="bg-color-secondary rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 1, 'transition': true, 'transitionDuration': 2000}"></div>
+							<div class="bg-color-tertiary rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 1, 'transition': true, 'transitionDuration': 2000}"></div>
 						</div>
 						<div class="custom-circle custom-circle-small custom-circle-pos-21 appear-animation" data-appear-animation="expandInWithBlur" data-appear-animation-delay="700" data-appear-animation-duration="2s">
 							<div class="custom-bg-color-grey-2 rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 0.5, 'transition': true, 'transitionDuration': 1000}"></div>
@@ -363,27 +386,12 @@
 					</div>
 					<br><br><br>
 				</section>
-				</div>
-
-
-
-
-
-				<!--Edqan-->
-
-                <!--Applications-->
-
-
-				<!--Edqan-->
-
-
-				<!--V2030-->
-
-
 			</div>
 
-			<footer id="footer" class="bg-color-quaternary position-relative mt-0">
-				<svg class="custom-section-curved-top-7" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" style="background: white;">
+		</div>
+
+		<footer id="footer" class="bg-color-quaternary position-relative mt-0">
+				<svg class="custom-section-curved-top-7" width="100%" height="400" xmlns="http://www.w3.org/2000/svg">
 					<path id="svg_2" fill="#171940" stroke="#000" stroke-width="0" d="m-16.68437,95.44889c0,0 5.33335,176.00075 660.00283,93.33373c327.33474,-41.33351 503.33549,15.3334 639.00274,35.66682c135.66725,20.33342 59.66691,9.66671 358.33487,28.33346c298.66795,18.66676 268.66829,-45.00088 382.66831,-112.00048c114.00002,-66.9996 718.31698,-59.48704 1221.66946,95.563c503.35248,155.05004 -221.83202,184.10564 -243.66935,197.60521c-21.83733,13.49958 -3008.67549,-19.83371 -3008.00467,-20.83335c-0.67082,0.99964 -30.00428,-232.33469 -10.00419,-317.66839z" class="svg-fill-color-quaternary"/>
 				</svg>
 				<div class="container position-relative mt-0">
@@ -442,25 +450,9 @@
 						</div>
 						<div class="col-lg-3">
 							<h4 class="font-weight-bold text-color-light text-5 ls-0 pb-1 mb-2"> &nbsp; </h4>
-							<ul class="list list-unstyled">
-								<li class="mb-1">
-									<a href="">الأحداث</a>
-								</li>
-								<li class="mb-1">
-									<a href="">الإعلانات</a>
-								</li>
-								<li class="mb-1">
-
-								</li>
-								<li class="mb-1">
-
-								</li>
-							</ul>
-							<ul class="social-icons custom-social-icons-style-1">
-								<li class="social-icons-instagram"><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-								<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-								<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-							</ul>
+							
+							<a href="https://sgs.org.sa/" target="_blank" title="sgs.gov.sa"><i class="fas fa-globe"></i> البوابة الخارجية</a><br>
+							<a href="https://www.absher.sa/" target="_blank" title="أبشر"><img src="img/demos/seo-2/icons/absher-01.svg" class="img-fluid mb-4 pb-2" width="100" height="80" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light pb-2 mb-4'}" /></i></a>
 						</div>
 					</div>
 				</div>
@@ -474,7 +466,7 @@
 						</div>
 					</div>
 				</div>
-			</footer>
+		</footer>
 
 
 		<script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "7164605bf1a21bb30aa0702a36ca30888e3630aee380128e0502c7c96ece30ad", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
