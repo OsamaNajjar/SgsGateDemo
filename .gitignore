@@ -1,5 +1,21 @@
 /ajax
 
+/css/demos
+/css/fonts
+/css/skins/default.css
+/css/skins/skin-app-landing.css
+/css/skins/skin-resume.css
+/css/skins/skin-sass.css
+/css/rtl-theme-blog.css
+/css/rtl-theme-elements.css
+/css/rtl-theme-shop.css
+/css/rtl-theme.css
+/css/theme-blog.css
+/css/theme-elements.css
+/css/theme-shop.css
+/css/theme.css
+
+
 /img/avatars
 /img/blog
 /img/clients
