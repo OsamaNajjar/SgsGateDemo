@@ -339,22 +339,32 @@ color: #40B3A6;
   .boxList{
     width:80%;
   }
+  .appear-animation.animated.fadeInUp.appear-animation-visible.morelnk{
+    margin-left: 75px;
+  }
 }
 @media(min-width:991px){
   .boxList{
     width:95%;
+  }
+  .appear-animation.animated.fadeInUp.appear-animation-visible.morelnk{
+    margin-left: 45%;
   }
 }
 @media(min-width:1245px){
   .boxList{
     width:88%;
   }
+  .appear-animation.animated.fadeInUp.appear-animation-visible.morelnk{
+    margin-left: 100px;
+  }
 }
 .appear-animation.animated.fadeInUp.appear-animation-visible.morelnk{
   animation-delay: 900ms;
-  padding-top: 10px;
   color: #40B3A6;
   transition: .3s;
+  display: flex;
+  justify-content: flex-end;
 }
 .appear-animation.animated.fadeInUp.appear-animation-visible.morelnk:hover{
   color:rgb(50 143 132);
