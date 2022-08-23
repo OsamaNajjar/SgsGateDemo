@@ -404,6 +404,7 @@ border-radius: 50px;
   width: 150px;
   background-color: #067377;
   right: -150px;
+  z-index: -2;
 }
 .sideBar .listSide::after{
   position: absolute;
@@ -420,12 +421,31 @@ border-radius: 50px;
 list-style: none;
 padding: 0 0 35px 0;
 }
+.sideBar .listSide ul.nav{
+  display:block;
+}
 .sideBar .listSide ul li{
   margin-bottom: 1rem;
   cursor: pointer;
 }
 .sideBar .listSide ul li a{
   color:#3cc7bc;
+}
+.sideBar .listSide ul li a.active{
+  color: white;
+  transition: .3s;
+}
+.sideBar .listSide ul li a.active::before{
+  content: "";
+  width: 341px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: #3cc7bc;
+  position: absolute;
+  opacity: 1;
+  right: -10px;
+  z-index: -1;
+  transition: .3s;
 }
 .sideBar .listSide ul li a::before{
   content: "";
@@ -439,10 +459,34 @@ padding: 0 0 35px 0;
   z-index: -1;
   transition: .3s;
 }
+
 .sideBar .listSide ul li:hover a::before{
-  opacity: .3;
+  opacity: 1;
 }
 .sideBar .listSide ul li a img{
   margin-left: 10px;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+.pageNum{
+  display: flex;
+  gap: 5px;
+  flex-direction: row-reverse;
+  justify-content: center;
+  color: #067377;
+  padding: 0;
+  margin: 0;
+}
+.pageNumCounter{
+  border: 1px solid #067377;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.pageNumCounter.active{
+  background-color: #067377;
+  color: white;
 }

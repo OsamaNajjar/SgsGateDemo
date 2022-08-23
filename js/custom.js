@@ -19,9 +19,9 @@ div.textContent = ellipsify(div.textContent);
     */
     if( $('#st0_start').get(0) ) {
 	    var shape1 = KUTE.fromTo('#st0_start', {
-			path: '#st0_start' 
-		}, { 
-			path: '#st0_end' 
+			path: '#st0_start'
+		}, {
+			path: '#st0_end'
 		}, {
 			duration: 10000,
 			easing	: 'easingQuadraticInOut',
@@ -33,9 +33,9 @@ div.textContent = ellipsify(div.textContent);
 
 	if( $('#st1_start').get(0) ) {
 	    var shape1 = KUTE.fromTo('#st1_start', {
-			path: '#st1_start' 
-		}, { 
-			path: '#st1_end' 
+			path: '#st1_start'
+		}, {
+			path: '#st1_end'
 		}, {
 			duration: 10000,
 			easing	: 'easingQuadraticInOut',
@@ -47,9 +47,9 @@ div.textContent = ellipsify(div.textContent);
 
 	if( $('#st2_start').get(0) ) {
 	    var shape1 = KUTE.fromTo('#st2_start', {
-			path: '#st2_start' 
-		}, { 
-			path: '#st2_end' 
+			path: '#st2_start'
+		}, {
+			path: '#st2_end'
 		}, {
 			duration: 10000,
 			easing	: 'easingQuadraticInOut',
@@ -61,9 +61,9 @@ div.textContent = ellipsify(div.textContent);
 
 	if( $('#st3_start').get(0) ) {
 	    var shape1 = KUTE.fromTo('#st3_start', {
-			path: '#st3_start' 
-		}, { 
-			path: '#st3_end' 
+			path: '#st3_start'
+		}, {
+			path: '#st3_end'
 		}, {
 			duration: 10000,
 			easing	: 'easingQuadraticInOut',

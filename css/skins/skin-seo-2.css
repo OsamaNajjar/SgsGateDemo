@@ -3194,7 +3194,7 @@ html body .tabs.tabs-bottom .nav-tabs .nav-link.active:hover,
 html.dark body .tabs.tabs-bottom .nav-tabs .nav-link.active:hover,
 html body .tabs.tabs-bottom .nav-tabs .nav-link.active:focus,
 html.dark body .tabs.tabs-bottom .nav-tabs .nav-link.active:focus {
-	border-bottom-color: #3C71E2;
+	border-bottom-color: #40B3A6;
 }
 
 html body .tabs.tabs-vertical.tabs-left .nav-tabs li .nav-link:hover,
@@ -3843,7 +3843,7 @@ html .list-primary.list-icons li > [class*="fa-"]:first-child,
 html .list-primary.list-icons li a:first-child > [class*="fa-"]:first-child,
 html .list-primary.list-icons li > .icons:first-child,
 html .list-primary.list-icons li a:first-child > .icons:first-child {
-	color: #3C71E2;
+	color: #40B3A6;
 	border-color: #3C71E2;
 }
 
@@ -4082,12 +4082,12 @@ html .accordion.accordion-primary .card-header a {
 }
 
 html .accordion-modern-status-primary.accordion-modern-status > .card .card-header a:not(.collapsed) {
-	background-color: #3C71E2 !important;
+	background-color: #40B3A6 !important;
 	color: #FFF !important;
 }
 
 html .accordion-modern-status-primary.accordion-modern-status > .card:hover .card-header a.collapsed {
-	color: #3C71E2 !important;
+	color: #40B3A6 !important;
 }
 
 html .accordion.accordion-secondary .card-header {
@@ -4102,7 +4102,7 @@ html .accordion-modern-status-secondary.accordion-modern-status > .card .card-he
 	background-color: #31A37A !important;
 	color: #FFF !important;
 }
-
+A6
 html .accordion-modern-status-secondary.accordion-modern-status > .card:hover .card-header a.collapsed {
 	color: #31A37A !important;
 }
