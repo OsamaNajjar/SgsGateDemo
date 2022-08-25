@@ -355,25 +355,29 @@ color: #40B3A6;
   display: flex;
   align-items: center;
 }
+.hrTitle{
+  color: white;
+  font-size: 35px;
+  width: 240px;
+  line-height: 1.3;
+  padding-top: 45px;
+}
 .sideBar .contantSide{
-  width: 150%;
-  height: 900px;
-  background-color: #eff1f3;
+  width: 100%;
+  height: 85%;
+  background-color: #f6f6f6;
   position: absolute;
-  left: -150px;
-  bottom: 93px;
+  bottom: 95px;
 }
 .sideBar .contantSide .hrCard{
-  width: 35%;
-  height: 72%;
+  height: 76%;
   background-color: white;
   border-radius: 10px;
   border: 1px solid #ccc;
   box-shadow: 0 4px 7px 0px #00000029;
   z-index: 2;
   position: absolute;
-  top: 58%;
-  left: 38%;
+  top: 56%;
   transform: translate(-50%, -50%);
   overflow-y: scroll;
   padding: 30px;
@@ -386,23 +390,24 @@ background-color: #ccc;
 border-radius: 50px 0 0 50px;
 }
 .hrCard::-webkit-scrollbar-thumb{
-background-color: #067f84;
+background-color: #056165;
 border-radius: 50px;
 }
 .hrCard::-webkit-scrollbar-thumb:hover{
-  background-color: #067377;
+  background-color: #045053;
 }
 .sideBar .listSide{
-  background-color: #067377;
+  background-color: #40B3A6;
   position: relative;
   z-index: 1;
+  padding-bottom: 40px;
 }
 .sideBar .listSide::before{
   position: absolute;
   content: "";
   height: 100%;
   width: 150px;
-  background-color: #067377;
+  background-color: #40B3A6;
   right: -150px;
   z-index: -2;
 }
@@ -411,48 +416,44 @@ border-radius: 50px;
   content: "";
   height: 100%;
   width: 190px;
-  background-color: #067377;
+  background-color: #40B3A6;
   right: 237px;
   transform: skewX(10deg);
   top: 0;
   z-index: -2;
 }
-.sideBar .listSide ul{
-list-style: none;
-padding: 0 0 35px 0;
-}
-.sideBar .listSide ul.nav{
+.sideBar .listSide .hrNav.nav{
   display:block;
 }
-.sideBar .listSide ul li{
-  margin-bottom: 1rem;
-  cursor: pointer;
+.hrNav .hrNavListItem{
+  margin-bottom: 10px;
+  cursor:pointer;
 }
-.sideBar .listSide ul li a{
-  color:#3cc7bc;
+.hrNav .hrNavListItem a{
+  color:#045053;
 }
-.sideBar .listSide ul li a.active{
+.hrNav .hrNavListItem a.active{
   color: white;
   transition: .3s;
 }
-.sideBar .listSide ul li a.active::before{
+.hrNav .hrNavListItem a.active::before{
   content: "";
   width: 341px;
   height: 36px;
   border-radius: 4px;
-  background-color: #3cc7bc;
+  background-color: #045053;
   position: absolute;
   opacity: 1;
   right: -10px;
   z-index: -1;
   transition: .3s;
 }
-.sideBar .listSide ul li a::before{
+.hrNav .hrNavListItem a::before{
   content: "";
   width: 341px;
   height: 36px;
   border-radius: 4px;
-  background-color: #068c91;
+  background-color: #3cc7bc;
   position: absolute;
   opacity: 0;
   right: -10px;
@@ -460,24 +461,28 @@ padding: 0 0 35px 0;
   transition: .3s;
 }
 
-.sideBar .listSide ul li:hover a::before{
+.hrNav .hrNavListItem:hover a::before{
   opacity: 1;
 }
-.sideBar .listSide ul li a img{
+.hrNav .hrNavListItem a img{
   margin-left: 10px;
+  filter: invert(24%) sepia(67%) saturate(548%) hue-rotate(134deg) brightness(93%) contrast(100%);
+}
+.hrNav .hrNavListItem a.active img{
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
+
 .pageNum{
   display: flex;
   gap: 5px;
   flex-direction: row-reverse;
   justify-content: center;
-  color: #067377;
+  color: #045053;
   padding: 0;
   margin: 0;
 }
 .pageNumCounter{
-  border: 1px solid #067377;
+  border: 1px solid #045053;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -487,6 +492,296 @@ padding: 0 0 35px 0;
   cursor: pointer;
 }
 .pageNumCounter.active{
-  background-color: #067377;
+  background-color: #045053;
   color: white;
 }
+@media (max-width: 1239px) and (min-width:1200px){
+  .sideBar .contantSide .hrCard{
+    width: 66%;
+    left: 37%;
+  }
+}
+@media (max-width: 1199px) and (min-width:1120px){
+  .sideBar .contantSide .hrCard{
+    left: 40%;
+  }
+}
+@media (max-width: 1119px) and (min-width:961px){
+  .sideBar .contantSide .hrCard{
+    left: 39%;
+    width: 58%;
+  }
+}
+@media (max-width: 1000px) and (min-width:961px){
+  .sideBar .listSide .hrNav{
+    width:315px;
+  }
+  .sideBar .listSide .hrNav .hrNavListItem a.active::before{
+    width: 310px;
+  }
+  .sideBar .listSide .hrNav .hrNavListItem a::before{
+    width: 310px;
+  }
+}
+
+@media (max-width: 420px){
+  .sideBar{
+    flex-direction: column;
+    height: 1000px;
+  } 
+  .sideBar .listSide .hrNav .hrNavListItem a.active::before{
+    display: none;
+  }
+  .sideBar .listSide .hrNav .hrNavListItem a::before{
+    display: none;
+  }
+  .sideBar .listSide .hrNav.nav{
+    display: flex;
+  }
+  .hrNav .hrNavListItem{
+    margin-left: 20px;
+  }
+  .hrNav .hrNavListItem a img{
+    margin-left: 0;
+  }
+  .sideBar .listSide{
+    padding-right: 20px;
+  }
+  .hrTitle{
+    width: 400px;
+  }
+  .sideBar .contantSide .hrCard{
+    top: 71%;
+    width: 95%;
+    left: 50%;
+    height: 50%;
+  }
+  .sideBar .listSide::after{
+    right: 650px;
+    transform: skewX(0deg);
+  }
+}
+
+@media (max-width: 534px) and (min-width:421px){
+  .sideBar{
+    flex-direction: column;
+    height: 1000px;
+  } 
+  .sideBar .listSide .hrNav .hrNavListItem a.active::before{
+    display: none;
+  }
+  .sideBar .listSide .hrNav .hrNavListItem a::before{
+    display: none;
+  }
+  .sideBar .listSide .hrNav.nav{
+    display: flex;
+  }
+  .hrNav .hrNavListItem{
+    margin-left: 20px;
+  }
+  .hrNav .hrNavListItem a img{
+    margin-left: 0;
+  }
+  .sideBar .listSide{
+    padding-right: 20px;
+  }
+  .hrTitle{
+    width: 400px;
+  }
+  .sideBar .contantSide .hrCard{
+    top: 68%;
+    width: 95%;
+    left: 50%;
+    height: 55%;
+  }
+  .sideBar .listSide::after{
+    right: 500px;
+    transform: skewX(0deg);
+  }
+}
+
+@media (max-width: 669px) and (min-width:535px){
+  .sideBar{
+    flex-direction: column;
+    height: 1000px;
+  } 
+  .sideBar .listSide .hrNav .hrNavListItem a.active::before{
+    display: none;
+  }
+  .sideBar .listSide .hrNav .hrNavListItem a::before{
+    display: none;
+  }
+  .sideBar .listSide .hrNav.nav{
+    display: flex;
+  }
+  .hrNav .hrNavListItem{
+    margin-left: 20px;
+  }
+  .hrNav .hrNavListItem a img{
+    margin-left: 0;
+  }
+  .sideBar .listSide{
+    padding-right: 20px;
+  }
+  .hrTitle{
+    width: 400px;
+  }
+  .sideBar .contantSide .hrCard{
+    top: 65%;
+    width: 95%;
+    left: 50%;
+    height: 66%;
+  }
+  .sideBar .listSide::after{
+    right: 500px;
+    transform: skewX(0deg);
+  }
+}
+
+@media (max-width: 700px) and (min-width:670px){
+  .sideBar{
+    flex-direction: column;
+    height: 900px;
+  } 
+  .sideBar .listSide .hrNav .hrNavListItem a.active::before{
+    display: none;
+  }
+  .sideBar .listSide .hrNav .hrNavListItem a::before{
+    display: none;
+  }
+  .sideBar .listSide .hrNav.nav{
+    display: flex;
+  }
+  .hrNav .hrNavListItem{
+    margin-left: 20px;
+  }
+  .hrNav .hrNavListItem a img{
+    margin-left: 0;
+  }
+  .sideBar .listSide{
+    padding-right: 20px;
+  }
+  .hrTitle{
+    width: 400px;
+  }
+  .sideBar .contantSide .hrCard{
+    top: 66%;
+    width: 95%;
+    left: 50%;
+    height: 66%;
+  }
+  .sideBar .listSide::after{
+    right: 650px;
+    transform: skewX(0deg);
+  }
+}
+
+@media (max-width: 812px) and (min-width:701px){
+  .sideBar{
+    flex-direction: column;
+    height: 900px;
+  } 
+  .sideBar .listSide .hrNav .hrNavListItem a.active::before{
+    display: none;
+  }
+  .sideBar .listSide .hrNav .hrNavListItem a::before{
+    display: none;
+  }
+  .sideBar .listSide .hrNav.nav{
+    display: flex;
+  }
+  .hrNav .hrNavListItem{
+    margin-left: 20px;
+  }
+  .hrNav .hrNavListItem a img{
+    margin-left: 0;
+  }
+  .sideBar .listSide{
+    padding-right: 20px;
+  }
+  .hrTitle{
+    width: 400px;
+  }
+  .sideBar .contantSide .hrCard{
+    top: 62%;
+    width: 95%;
+    left: 50%;
+    height: 66%;
+  }
+  .sideBar .listSide::after{
+    right: 650px;
+    transform: skewX(0deg);
+  }
+}
+
+@media (max-width: 960px) and (min-width:813px){
+  .sideBar{
+    flex-direction: column;
+    height: 900px;
+  }
+  .sideBar .contantSide .hrCard{
+    width: 95%;
+    left: 50%;
+    top: 57%;
+    height: 66%;
+  }
+  
+  .sideBar .listSide .hrNav .hrNavListItem a.active::before{
+    display: none;
+  }
+  .sideBar .listSide .hrNav .hrNavListItem a::before{
+    display: none;
+  }
+  .sideBar .listSide .hrNav.nav{
+    display: flex;
+  }
+  .hrNav .hrNavListItem{
+    margin-left: 20px;
+  }
+  .hrNav .hrNavListItem a img{
+    margin-left: 0;
+  }
+
+  .sideBar .listSide::after{
+    right: 742px;
+    transform: skewX(0deg);
+  }
+  .sideBar .listSide{
+    padding-right: 20px;
+  }
+  .hrTitle{
+    width: 400px;
+  }
+}
+
+@media (min-width: 1240px){
+  .sideBar .contantSide .hrCard{
+    width: 68%;
+    left: 38.5%;
+  }
+}
+
+@media (min-width: 768px){
+  .container.hrSection, .container-md, .container-sm {
+    max-width: 100%;
+}
+}
+
+@media (min-width: 576px){
+  .container.hrSection, .container-sm {
+    max-width: 100%;
+}
+}
+.container.hrSection::after{
+  content: "";
+  position: absolute;
+  background-color: #f6f6f6;
+  height: 85%;
+  width: 15%;
+  left: -150px;
+  top: 38px;
+}
+
+
+
+
